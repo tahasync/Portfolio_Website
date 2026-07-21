@@ -2,7 +2,7 @@ export const personal = {
   name: "Muhammad Taha Naeem",
   role: "Data Science Student",
   tagline: "I build the pipeline between raw data and real answers — from cleaning to prediction.",
-  email: "muhamadtahanaeem.pro@gmail.com",
+  email: "taha-codes@outlook.com",
   phone: "+92-317-7407596",
   location: "Lahore, Pakistan",
   resumeUrl: "/resume.pdf",
