@@ -9,7 +9,7 @@ export const personal = {
   socials: {
     github: "https://github.com/tahasync",
     linkedin: "https://linkedin.com/in/heyitxtaha",
-    portfolio: "https://datascience-portfolio-website.netlify.app",
+    portfolio: "https://tahasync-portfolio.netlify.app",
   },
 };
 
