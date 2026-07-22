@@ -1,13 +1,14 @@
 import { motion } from "framer-motion";
 import { useInView } from "../hooks/useInView";
-import { about } from "../data/content";
+import { about, projects, skills } from "../data/content";
+
+const totalSkills = skills.reduce((sum, g) => sum + g.items.length, 0);
 
 export default function About() {
   const [ref, inView] = useInView();
 
   return (
     <section id="about" className="relative py-24 md:py-32 overflow-hidden">
-      {/* Background accent */}
       <div className="absolute top-1/2 left-[-10%] w-[40%] h-[50%] rounded-full bg-magenta/5 blur-[120px] -z-10" />
 
       <div ref={ref} className="max-w-6xl mx-auto px-6">
@@ -21,7 +22,6 @@ export default function About() {
         </motion.h2>
 
         <div className="grid md:grid-cols-5 gap-10 md:gap-16 items-center">
-          {/* Image — outer ring + inner photo blob, animated in perfect sync */}
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={inView ? { opacity: 1, scale: 1 } : {}}
@@ -90,7 +90,6 @@ export default function About() {
             </motion.div>
           </motion.div>
 
-          {/* Bio */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
@@ -108,11 +107,11 @@ export default function About() {
                 <p className="text-text-secondary text-sm">Semester</p>
               </div>
               <div>
-                <span className="font-heading text-2xl font-bold text-magenta">16+</span>
+                <span className="font-heading text-2xl font-bold text-magenta">{projects.length}+</span>
                 <p className="text-text-secondary text-sm">Projects</p>
               </div>
               <div>
-                <span className="font-heading text-2xl font-bold text-gold">20+</span>
+                <span className="font-heading text-2xl font-bold text-gold">{totalSkills}+</span>
                 <p className="text-text-secondary text-sm">Tech Skills</p>
               </div>
             </div>

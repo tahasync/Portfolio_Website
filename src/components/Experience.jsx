@@ -27,7 +27,7 @@ export default function Experience() {
           <div className="space-y-8">
             {experience.map((item, i) => (
               <motion.div
-                key={i}
+                key={`${item.type}-${i}`}
                 initial={{ opacity: 0, x: -20 }}
                 animate={inView ? { opacity: 1, x: 0 } : {}}
                 transition={{ duration: 0.5, delay: i * 0.15 }}
