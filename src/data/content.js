@@ -65,7 +65,7 @@ export const projects = [
     title: "Foam Shop POS",
     description: "Flutter + Firebase POS and ledger system for Asif Foam Center with real-time inventory, customer/supplier Khata, and receipt printing.",
     tech: ["Flutter", "Firebase", "Riverpod", "Dart"],
-    github: "https://github.com/tahasync/foam-shop-erp",
+    github: "https://github.com/tahasync/foam-shop-pos",
     demo: null,
   },
   {
