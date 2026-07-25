@@ -35,7 +35,7 @@ export default function Skills() {
           <span className="text-cyan">/</span> skills
         </motion.h2>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 items-stretch">
           {skills.map((group, gi) => (
             <motion.div
               key={group.category}

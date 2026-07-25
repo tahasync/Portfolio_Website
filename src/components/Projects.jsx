@@ -21,14 +21,14 @@ export default function Projects() {
           <span className="text-gold">/</span> projects
         </motion.h2>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 items-stretch auto-rows-fr">
           {projects.map((p, i) => (
             <motion.div
               key={p.title}
               initial={{ opacity: 0, y: 30 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.4, delay: i * 0.07 }}
-              className="group relative rounded-xl border border-white/10 bg-card-bg backdrop-blur-sm p-6 hover:border-magenta/40 transition-all duration-300"
+              className="group relative rounded-xl border border-white/10 bg-card-bg backdrop-blur-sm p-6 hover:border-magenta/40 transition-all duration-300 flex flex-col h-full"
             >
               {/* Hover gradient accent */}
               <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-magenta/[0.03] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
@@ -36,7 +36,7 @@ export default function Projects() {
               <h3 className="font-heading text-lg font-bold text-text-primary group-hover:text-magenta transition-colors">
                 {p.title}
               </h3>
-              <p className="mt-2 text-text-secondary text-sm leading-relaxed line-clamp-3">
+              <p className="mt-2 text-text-secondary text-sm leading-relaxed flex-1">
                 {p.description}
               </p>
 
@@ -58,7 +58,7 @@ export default function Projects() {
               </div>
 
               {/* Links */}
-              <div className="flex items-center gap-3 mt-5">
+              <div className="flex items-center gap-3 mt-5 pt-2">
                 <a
                   href={p.github}
                   target="_blank"
