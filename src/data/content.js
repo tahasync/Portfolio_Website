@@ -79,14 +79,14 @@ export const projects = [
     title: "BDA Opinion Mining",
     description: "Real-time opinion mining pipeline for streaming sentiment analysis using Kafka, PySpark, Hugging Face, and a React dashboard.",
     tech: ["Kafka", "PySpark", "Hugging Face", "React", "Docker"],
-    github: "https://github.com/tahasync/BDA-OpinionMining",
+    github: "https://github.com/tahasync/bda-opinion-mining-capstone",
     demo: null,
   },
   {
     title: "Churn Prediction Pipeline",
     description: "End-to-end ML pipeline predicting telecom customer churn with XGBoost, SHAP explainability, FastAPI backend, and React dashboard.",
     tech: ["XGBoost", "FastAPI", "SHAP", "React", "Docker"],
-    github: "https://github.com/tahasync/churn-prediction-pipeline",
+    github: "https://github.com/tahasync/telco-churn-prediction",
     demo: null,
   },
 ];
